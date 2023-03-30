@@ -1,0 +1,46 @@
+<h1>Pizza</h1>
+
+<label for="nomePizza">Nome Pizza: </label>
+<input type="text" [(ngModel)]="nomePizza">
+
+<label for="condimentoPizza">Condimento Aggiuntivo</label>
+<input type="text" [(ngModel)]="condimentoAgg">
+
+<br>
+
+<label for="allergie">Allergie: </label>
+<input type="text" [(ngModel)]="allergeni" (blur)="onSegnalaAllergia()">
+
+<!-- Per utilizzare ngModel devo importare i FormsModule in app.module.ts -->
+
+
+<p>Stai scegliendo la seguente pizza: {{nomePizza}} - {{condimentoAgg}}
+
+<span></span>
+
+</p>
+
+<button [disabled]="nomePizza == ''" (click)="onReset()" >Reset</button>
+
+<button (click)="onAggiungiPizza()" >Aggiungi Pizza</button>
+<br>
+
+<div *ngIf="numPizze != 0; else noPizze">
+  <h3>Lista Pizze</h3>
+  <ul>
+    <li *ngFor="let pizza of pizze">
+      {{pizza.nome}} - {{pizza.condimento}}
+    </li>
+  </ul>
+</div>
+
+<!-- Local Reference, vive solo nel Template -->
+<ng-template #noPizze>
+  <h3>Non hai ancora nessuna pizza in lista</h3>
+</ng-template>
+
+<!-- Reset senza utilizzo del metodo. Bruttissimo
+<button [disabled]="nomePizza == ''"
+(click)="nomePizza = '' ">
+  Reset senza metodo
+</button> -->

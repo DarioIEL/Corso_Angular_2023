@@ -1,0 +1,14 @@
+.card{
+  width: 150px;
+  height: 100px;
+  border: 2px solid blue;
+}
+
+
+.bgGreen{
+  background-color: lightgreen;
+}
+
+.bgRed{
+  background-color: lightcoral;
+}

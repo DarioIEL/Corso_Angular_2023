@@ -1,0 +1,11 @@
+.ltr{
+  text-decoration: line-through;
+}
+
+.online{
+  background-color: lightgreen;
+}
+
+.offline{
+  background-color: lightcoral;
+}

@@ -1,0 +1,24 @@
+<!-- <div class="dimUser"
+ [ngClass]="{onlineCl: status === 'online', offlineCl: status === 'offline'}">
+ <p>{{nomeUser}} - id: {{idUser}}</p>
+ <p>{{status}}</p>
+</div> -->
+
+<div class="dimUser"
+ [ngClass]="{onlineCl: status === 'online', offlineCl: status === 'offline'}">
+
+ <ul>
+  <!-- user è una var che esiste solo nel template. users è il mio array definito nel .ts -->
+   <li *ngFor="let user of users; index as i" >
+     {{user.nome}} - {{user.cognome}} - {{i}}
+   </li>
+ </ul>
+
+ <p *ngIf="mostra">
+   La direttiva valuta la prop come true
+ </p>
+
+ <p *ngSwitch=""></p>
+
+ <p>{{status}}</p>
+</div>

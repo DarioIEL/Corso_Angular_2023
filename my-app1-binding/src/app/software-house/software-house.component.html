@@ -1,0 +1,45 @@
+<hr>
+<button [disabled]="!permettiNuovoDeveloper">Aggiungi Developer</button>
+
+<!-- Event Binding, si mette in atto con le paretesi tonde e l'evento ->
+  (event) = "onMiaFunzione()" -->
+
+  <h3>Event Binding</h3>
+
+<button class="btn"
+  [disabled]="!permettiNuovoDeveloper"
+  (click)="onCreaDev()"> Aggiungi Developer </button>
+
+<p>Lo sviluppatore è stato appena creato: {{devCreated}}</p>
+
+<h3>Lista Developers</h3>
+<ul>
+  <li *ngFor="let dev of developers">
+    {{dev}}
+  </li>
+</ul>
+
+<hr>
+
+<h3>Event Binding con parametro</h3>
+<label for="developer">Nome Developer</label>
+<input type="text" (input)="onModNomeDeveloper($event)">
+
+<p>{{nomeDeveloper}}</p>
+
+
+<hr>
+
+<h3>Two-Way Databinding</h3>
+<!-- ATT: bisogna fare degli import particolare nel mio app.module.ts -->
+
+<label for="nomeDev">Nome Developer</label>
+<!-- lego il valore del campo input ad una proprietà di classe -->
+<!-- ngModel è una direttiva tipica dei campi input -->
+<input type="text" [(ngModel)]="nomeDeveloper" >
+
+<p>{{nomeDeveloper}}</p>
+
+
+
+

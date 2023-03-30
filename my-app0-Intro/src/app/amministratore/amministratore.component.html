@@ -1,0 +1,16 @@
+<p>Admin: {{admin.nome}} {{admin.cognome}} - Matricola: {{admin.matricola}}</p>
+
+<p>Nome admin {{nome}}</p>
+
+<!-- Faccio il binding sull'attributo class -->
+<p [ngStyle]="{'color': getColor()}" >Status dell'admin {{adminStatus}}</p>
+
+
+<p [ngClass]="{online: adminStatus === 'online', offline: adminStatus === 'offline'}" >
+
+Status Admin con sfondo {{getStatus()}}
+</p>
+
+<p [textContent]="getStatus()"></p>
+
+<!-- <p>{{getAdmins()}}</p> -->

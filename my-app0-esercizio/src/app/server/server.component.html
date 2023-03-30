@@ -1,0 +1,17 @@
+<div class="dimServer"
+    [ngClass]="{onlineCl: status === 'online', offlineCl: status === 'offline'}">
+  <p>{{nomeServer}}</p>
+  <p>Status Server: {{status}}</p>
+
+  <app-user></app-user>
+</div>
+
+
+<!--
+<div class="dimServer"
+    [ngClass]="{onlineCl: getStatus() === 'online', offlineCl: getStatus() === 'offline'}">
+  <p>{{nomeServer}}</p>
+  <p>Status Server: {{getStatus()}}</p>
+
+  <app-user></app-user>
+</div> -->

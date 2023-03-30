@@ -1,0 +1,22 @@
+<h2>Ciao classe di Angular</h2>
+
+<p>Questo è un paragrafo dell'appComponent</p>
+
+<h2>
+  <!-- renderizzo la prop titolo.
+  Sto facendo il Property Binding -->
+  {{titolo}}
+</h2>
+<p>
+  {{nomeCorso}} - Numero Studenti: {{numeroPartecipanti}} - Durata corso: {{durataCorso}}
+</p>
+
+<p class={{scegliColore()}} >Fornisco la classe con la proprietà del .ts</p>
+
+
+<!-- Renderizzo il component figlio Utente usando il selettore -->
+<app-utente></app-utente>
+
+<hr>
+
+<app-amministratore></app-amministratore>

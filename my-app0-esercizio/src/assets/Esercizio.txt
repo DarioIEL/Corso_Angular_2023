@@ -1,0 +1,8 @@
+1. Crea una nuova app myapp-esercizio1
+2. Crea due component fratelli (Server , User)
+3. Mostra il secondo dentro il primo
+4. Fornisci delle regole css basate sulla prop "online", "offline" utilizzando ngClass
+    (backgroundColor ecc ecc)
+5. Mostra delle prop di User all'interno di Server nella renderizzazione
+
+6. Crea un component "listaUtenti" che stampa un'array di utenti (nome, cognome, status(casuale) ). Mostra il component in app component

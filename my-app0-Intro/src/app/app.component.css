@@ -1,0 +1,17 @@
+/* p{
+  color: red;
+} */
+
+h1{
+  color:blue
+}
+
+.txtRed{
+  color: red;
+  text-decoration: underline;
+}
+
+.txtBlue{
+  color: blue;
+  text-decoration: underline;
+}
