@@ -1,6 +1,11 @@
 
-<app-pizza-item></app-pizza-item>
-<app-pizza-item></app-pizza-item>
-<app-pizza-item></app-pizza-item>
-<app-pizza-item></app-pizza-item>
-<app-pizza-item></app-pizza-item>
+<div class="row">
+  <!-- Qui renderizzo le pizze -->
+  <li *ngFor="let pizza of pizze">
+    {{pizza.nome}} - {{pizza.descrizione}}
+    <!-- <img class="dimImg" src="{{pizza.immagine}}" alt=""> -->
+    <img class="dimImg" [src]="pizza.immagine" alt="">
+    <p>Eseguita da {{pizza.pizzaiolo.nome}} {{pizza.pizzaiolo.cognome}}</p>
+  </li>
+</div>
+
