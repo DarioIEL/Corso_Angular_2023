@@ -12,6 +12,14 @@
 
   <app-server-element [nomeServerChild]="nomeServer2" [numConnChild]="numConn2" ></app-server-element>
 
+  <div>
+    <app-server-element
+    *ngFor="let server of listaServer"
+    [nomeServerChild]="server.nomeServer"
+    [numConnChild]="server.numConn" >
+  </app-server-element>
+  </div>
+
 </div>
 
 
@@ -20,3 +28,25 @@
   2. Renderizzalo in un div.container
   3. Passa in @Input() al component Computer delle prop come "nome", "tipo", "id" dichiarate nel parent AppComponent
  -->
+
+ <div class="container">
+  <app-computer [id]="idPc" [nome]="nomePc" [tipo]="tipoPc" ></app-computer>
+ </div>
+
+
+ <div class="container">
+  <app-user  *ngFor="let user of users" [user]="user">
+
+  </app-user>
+ </div>
+
+
+ <!--
+  1.Crea un component listaGiochi
+  2.Dentro questo component crea il component Gioco (nome, tipo, disponibilità: boolean)
+  3. Mostra una lista di giochi, ognuno in una card con un pulsante "Mod Disponibilità"
+  4. Al click sul pulsante cambia il valore delle prop disponibilità
+  5. Cambia anche il colore alla card
+  6. Renderizza tutto nell'app Component
+-->
+

@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { ComputerComponent } from './computer/computer.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ServerElementComponent,
-    ComputerComponent
+    ComputerComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule

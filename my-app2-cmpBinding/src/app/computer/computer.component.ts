@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-computer',
@@ -7,6 +7,9 @@ import { Component, EventEmitter } from '@angular/core';
 })
 export class ComputerComponent {
 
+  @Input() nome: string;
+  @Input() tipo: string;
+  @Input() id: number;
 
 
 

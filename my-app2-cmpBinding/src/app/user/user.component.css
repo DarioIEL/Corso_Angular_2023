@@ -1,0 +1,15 @@
+.card{
+  width: 100px;
+  height: 200px;
+  border: 1px solid green;
+  margin: 10px;
+  float: left;
+}
+
+.online{
+  background-color: lightgreen;
+}
+
+.offline{
+  background-color: lightcoral;
+}

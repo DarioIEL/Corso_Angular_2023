@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './user/user.model';
 
 @Component({
   selector: 'app-root',
@@ -14,5 +15,46 @@ export class AppComponent {
   nomeServer2: string = "Server Build";
   numConn2: number = 25;
 
+  listaServer: {
+    nomeServer: string,
+    numConn: number
+  }[] =[
+    {
+      nomeServer: "Server Java",
+      numConn: 30
+    },
+    {
+      nomeServer: "Server Git",
+      numConn: 100
+    },
+    {
+      nomeServer: "Server ANGULAR",
+      numConn: 15
+    }
+  ]
+
+
+  //Per @Computer
+  nomePc: string = "Dell";
+  tipoPc: string = "Portatile";
+  idPc: number = 1;
+
+
+  //Per @User
+  // user: User = {
+  //   nome: "Anna",
+  //   cognome: "Rossi",
+  //   id: 1,
+  //   tipo: "Admin",
+  //   status: "online"
+  // }
+
+
+  users: User[] = [
+    new User("Paolo", "Rossi", "Admin", 2, "offline"),
+    new User("Marco", "Mengoni", "Basic", 3, "online"),
+    new User("Pippo", "Baudo", "Admin", 4, "offline"),
+    new User("Paola", "Chiara", "Admin", 5, "online")
+  ]
 
 }

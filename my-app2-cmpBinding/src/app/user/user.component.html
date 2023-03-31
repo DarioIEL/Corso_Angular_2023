@@ -1,0 +1,8 @@
+<div [ngClass]="{online: user.status === 'online', offline: user.status === 'offline'}" class="card">
+
+  <h4>{{user.nome}} {{user.cognome}}</h4>
+  <p> Id: {{user.id}}</p>
+  <p>Tipo: {{user.tipo}}</p>
+  <p>Status: {{user.status}}</p>
+
+</div>
