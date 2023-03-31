@@ -42,7 +42,8 @@ export class PizzaListaComponent {
   //   }
   // ]
 
-  pizze: Pizza[] = []
+  pizze: Pizza[] = [];
+
 
   constructor() {
 
@@ -58,6 +59,7 @@ export class PizzaListaComponent {
     //   new Pizza("Margherita", "Pomodoro Mozzarella Basilico", "https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg"),
     //   new Pizza("Marinara", "Pomodoro aglio origano", "https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg")
     // ]
+
 
     this.pizze = [
       {
@@ -78,4 +80,7 @@ export class PizzaListaComponent {
       }
     ]
   }
+
+
+
 }

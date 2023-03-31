@@ -17,7 +17,4 @@ export class Pizza{
     this.pizzaiolo = pizzaiolo
   }
 
-  // compraPizza(){
-  //   console.log("Stai acquistando la pizza " this.nome);
-  // }
 }

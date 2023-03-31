@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app2-cmpBinding';
+  title = 'Input Output';
+
+  nomeServer: string = "Server Test";
+  numConn: number = 10;
+
+  nomeServer2: string = "Server Build";
+  numConn2: number = 25;
+
+
 }
