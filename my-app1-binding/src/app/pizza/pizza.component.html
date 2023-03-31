@@ -12,24 +12,30 @@
 <input type="text" [(ngModel)]="allergeni" (blur)="onSegnalaAllergia()">
 
 <!-- Per utilizzare ngModel devo importare i FormsModule in app.module.ts -->
-
-
-<p>Stai scegliendo la seguente pizza: {{nomePizza}} - {{condimentoAgg}}
-
-<span></span>
-
+<p [ngClass]="{bgOrange: allergiaStatus}">
+  Stai scegliendo la seguente pizza: {{nomePizza}} - {{condimentoAgg}}
+  <span *ngIf="allergiaStatus">
+    Stai segnalando la seguente allergia: {{allergeni}}
+  </span>
 </p>
 
-<button [disabled]="nomePizza == ''" (click)="onReset()" >Reset</button>
+<button [disabled]="nomePizza == ''" (click)="onReset()">Reset</button>
 
-<button (click)="onAggiungiPizza()" >Aggiungi Pizza</button>
+<button (click)="onAggiungiPizza()">Aggiungi Pizza</button>
 <br>
 
 <div *ngIf="numPizze != 0; else noPizze">
   <h3>Lista Pizze</h3>
   <ul>
     <li *ngFor="let pizza of pizze">
-      {{pizza.nome}} - {{pizza.condimento}}
+      {{pizza.nome}} - {{pizza.condimento}} 
+      <span  
+      [ngClass]="{bgOrange: pizza.allergia.length != 0}" 
+      *ngIf="pizza.allergia.length != 0"> 
+      
+      - Allergia: {{pizza.allergia}} 
+   
+    </span>
     </li>
   </ul>
 </div>

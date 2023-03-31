@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e">
+    <diagram id="Obk5sHIjkU0gm-d0gzHE" name="Page-1">
+        <mxGraphModel dx="1084" dy="1813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="11" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="60" width="210" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="20" width="540" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="- Margeherita" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="90" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="- Margeherita" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="110" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="- Margeherita" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="230" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="- Margeherita" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="140" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="- Margeherita" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="170" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="- Margeherita" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="200" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="@DettaglioPizza" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="60" width="220" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="75" width="180" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="@listaPizza" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="46" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="230" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="@Pizza" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="260" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="-14" width="530" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="53" width="510" height="324" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="@Pizze" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="347" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

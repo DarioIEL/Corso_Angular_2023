@@ -11,11 +11,13 @@ export class PizzaComponent {
   nomePizza: string;
   condimentoAgg: string;
   allergeni: string;
+  allergiaStatus: boolean = false;
 
   pizze: {
     nome: string,
-    condimento: string
-  } [] = [];
+    condimento: string,
+    allergia: string
+  }[] = [];
 
   numPizze: number = 0;
 
@@ -26,12 +28,17 @@ export class PizzaComponent {
   onReset(){
     this.nomePizza = "";
     this.condimentoAgg = "";
+    this.allergeni = "";
+    this.allergiaStatus = false;
   }
 
   onAggiungiPizza(){
     let pizza = {
       nome: this.nomePizza,
-      condimento: this.condimentoAgg
+      condimento: this.condimentoAgg,
+      //allergene è la prop nel nel tipo pizza
+      //this.allergeni è la prop di classe comandata dallo ngModel
+      allergia: this.allergeni
     }
 
     this.pizze.push(pizza);
@@ -46,5 +53,10 @@ export class PizzaComponent {
 
   onSegnalaAllergia(){
     //colora di arancione il tag p nel quale vedo che pizza sto scegliendo e aggiunge, sempre al tag p uno span in cui vengono scritte le allergie del campo input
+    if(this.allergeni != ""){
+      this.allergiaStatus = true;
+    }else{
+      this.allergiaStatus = false;
+    }
   }
 }
