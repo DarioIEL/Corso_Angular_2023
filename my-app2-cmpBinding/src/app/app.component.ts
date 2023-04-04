@@ -51,10 +51,25 @@ export class AppComponent {
 
 
   users: User[] = [
-    new User("Paolo", "Rossi", "Admin", 2, "offline"),
-    new User("Marco", "Mengoni", "Basic", 3, "online"),
-    new User("Pippo", "Baudo", "Admin", 4, "offline"),
-    new User("Paola", "Chiara", "Admin", 5, "online")
-  ]
+    new User("Paolo", "Rossi", "Admin", 2, "offline", false),
+    new User("Marco", "Mengoni", "Basic", 3, "online", false),
+    new User("Pippo", "Baudo", "Admin", 4, "offline", false),
+    new User("Paola", "Chiara", "Admin", 5, "online", true)
+  ];
 
+  nomeServerOUT: string;
+
+  constructor(){
+  }
+
+  nuovoServer: {
+    nomeServer: string,
+    numConnServer: number
+  };
+  //onCreaServer deve rispettare la struttura dell'oggetto in output
+  onCreaServer(server: {nomeServer: string, numConnServer: number}){
+
+    console.log(server);
+    this.nuovoServer = server
+  }
 }

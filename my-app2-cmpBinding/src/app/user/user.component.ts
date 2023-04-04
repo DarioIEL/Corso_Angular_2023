@@ -13,4 +13,8 @@ export class UserComponent {
   constructor(){
     console.log(this.user);
   }
+
+  onModDispo(){
+    this.user.dispo = !this.user.dispo
+  }
 }

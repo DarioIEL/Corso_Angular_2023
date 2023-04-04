@@ -1,0 +1,5 @@
+1. Impedire la creazione del panino se uno dei campi è vuoto
+
+2. (da fare per ultimo) Inserisci un pulsante elimina per ogni panino al fine di cancellare quel singolo panino. Studiare metodo .find() per gli array
+
+3. crea una lista di bibite nel component crea panino e mostrale in una dropdown (select option). La bibita è opzionale. Quindi verrà mostrata solo se c'è

@@ -1,0 +1,8 @@
+<div class="col-md-6">
+  <app-crea-panini (panino)="onCreaPanino($event)" ></app-crea-panini>
+</div>
+
+<div class="col-md-6">
+  <app-lista-panini *ngFor="let panino of panini"
+  [panino]="panino" ></app-lista-panini>
+</div>

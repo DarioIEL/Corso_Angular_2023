@@ -4,3 +4,7 @@ Creazione Comp innestati
     -Pizza Lista
         -Pizza Item
     -Pizza Dettaglio
+
+ng g c pizze/pizzaDettaglio
+ng g c pizze/pizzaLista
+ng g c pizze/pizzaLista/pizzaItem

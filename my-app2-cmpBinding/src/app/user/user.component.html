@@ -1,8 +1,11 @@
-<div [ngClass]="{online: user.status === 'online', offline: user.status === 'offline'}" class="card">
+<div [ngClass]="{online: user.dispo, offline: user.dispo == false}" class="card">
 
   <h4>{{user.nome}} {{user.cognome}}</h4>
   <p> Id: {{user.id}}</p>
   <p>Tipo: {{user.tipo}}</p>
   <p>Status: {{user.status}}</p>
+  <p>Disponibilità : {{user.dispo}}</p>
+
+  <button (click)="onModDispo()" >Cambia Disp</button>
 
 </div>

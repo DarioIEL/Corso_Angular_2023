@@ -1,6 +1,9 @@
 <!-- GOAL: passare i dati da un component all'altro, cioè da dashboard a server e viceversa.  AppComponent sarà il "Gateway" dei miei dati-->
 <div class="container">
-  <app-dashboard></app-dashboard>
+  <app-dashboard (onServer)="onCreaServer($event)" ></app-dashboard>
+
+  {{nuovoServer.nomeServer}} - {{nuovoServer.numConnServer}}
+
 </div>
 
 
@@ -34,10 +37,9 @@
  </div>
 
 
+ <!-- COn user invio direttamente un oggetto -->
  <div class="container">
-  <app-user  *ngFor="let user of users" [user]="user">
-
-  </app-user>
+  <app-user *ngFor="let user of users" [user]="user">  </app-user>
  </div>
 
 
@@ -50,4 +52,9 @@
   5. Cambia anche il colore alla card
   6. Renderizza tutto nell'app Component
 -->
+
+<div class="container">
+  <h2>Lista Giochi</h2>
+  <app-lista-giochi></app-lista-giochi>
+</div>
 

@@ -1,1 +1,8 @@
-<p>gioco works!</p>
+<div [ngClass]="{disp: gioco.dispo, nonDisp: gioco.dispo == false}" class="card">
+  <p>Nome: {{gioco.nome}}</p>
+  <p>Tipo: {{gioco.tipo}}</p>
+  <p>Diponibilità: {{gioco.dispo}}</p>
+  <button (click) = "onModDispo()">
+    Cambia Dispo
+  </button>
+</div>

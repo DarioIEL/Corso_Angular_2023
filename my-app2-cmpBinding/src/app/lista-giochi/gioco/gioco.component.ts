@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Gioco } from './gioco.model';
+
 
 @Component({
   selector: 'app-gioco',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./gioco.component.css']
 })
 export class GiocoComponent {
+
+  @Input() gioco: Gioco;
+
+  onModDispo(){
+    this.gioco.dispo = !this.gioco.dispo;
+  }
 
 }

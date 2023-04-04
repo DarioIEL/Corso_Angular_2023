@@ -1,0 +1,14 @@
+.card{
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  float: left;
+}
+
+.disp{
+  background-color: lightgreen;
+}
+
+.nonDisp{
+  background-color: lightcoral;
+}

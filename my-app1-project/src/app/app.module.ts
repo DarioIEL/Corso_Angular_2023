@@ -7,6 +7,11 @@ import { PizzeComponent } from './pizze/pizze.component';
 import { PizzaListaComponent } from './pizze/pizza-lista/pizza-lista.component';
 import { PizzaItemComponent } from './pizze/pizza-lista/pizza-item/pizza-item.component';
 import { PizzaDettaglioComponent } from './pizze/pizza-dettaglio/pizza-dettaglio.component';
+import { PaniniComponent } from './panini/panini.component';
+import { ListaPaniniComponent } from './panini/lista-panini/lista-panini.component';
+import { CreaPaniniComponent } from './panini/crea-panini/crea-panini.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +20,14 @@ import { PizzaDettaglioComponent } from './pizze/pizza-dettaglio/pizza-dettaglio
     PizzeComponent,
     PizzaListaComponent,
     PizzaItemComponent,
-    PizzaDettaglioComponent
+    PizzaDettaglioComponent,
+    PaniniComponent,
+    ListaPaniniComponent,
+    CreaPaniniComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
