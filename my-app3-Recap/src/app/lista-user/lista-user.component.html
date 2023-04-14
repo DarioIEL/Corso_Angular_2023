@@ -1,0 +1,32 @@
+<h4>Lista Utenti</h4>
+<ul>
+
+  <!-- Per segnalare l'oggetto al quale manca la prop eta metto uno sfondo rosso -->
+  <li [ngClass]="{
+    'bg-danger': user.eta == null,
+    'bg-success': user.eta != null,
+    'bg-info': user.eta > 25}"
+    *ngFor="let user of listaUtenti">
+
+    {{user.nome}} {{user.cognome}}
+    <span *ngIf='user.eta'> - Età: {{user.eta}} </span>
+  </li>
+
+
+  <hr>
+<!--
+  <li [ngClass]="classiValutate" *ngFor="let user of listaUtenti">
+
+    {{user.nome}} {{user.cognome}}
+    <span *ngIf='user.eta'> - Età: {{user.eta}} </span>
+  </li> -->
+
+  <!-- Sto lanciando, sto richiamando, un metodo dal template -->
+  <!-- <li [ngClass]="valutaClass()" *ngFor="let user of listaUtenti">
+
+    {{user.nome}} {{user.cognome}}
+    <span *ngIf='user.eta'> - Età: {{user.eta}} </span>
+  </li> -->
+
+
+</ul>
