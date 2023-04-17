@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges} from '@angular/core';
 import { User } from '../models/user.model';
 
 @Component({
@@ -6,13 +6,16 @@ import { User } from '../models/user.model';
   templateUrl: './lista-user.component.html',
   styleUrls: ['./lista-user.component.css']
 })
-export class ListaUserComponent {
+export class ListaUserComponent implements OnChanges{
 
-  // @Input() nuovoUser: User;
+  @Input() nuovoUser: User;
 
-  aggiungiUser(user: User){
-    this.listaUtenti.push(user);
+  ngOnChanges(): void {
+    if(this.nuovoUser != null){
+      this.listaUtenti.push(this.nuovoUser);
+    }
   }
+
 
   // listaUtenti = []
 

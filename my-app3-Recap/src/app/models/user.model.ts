@@ -6,8 +6,7 @@ export class User{
 
   //definisco un costruttore, il quale verrà invocato solo all'utilizzo della parola chiave new User(.........)
 
-  constructor(nome:
-    String, cognome: String, eta?: Number){
+  constructor(nome: String, cognome: String, eta?: Number){
     this.nome = nome;
     this.cognome = cognome;
     this.eta = eta;

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { User } from './models/user.model';
 
 @Component({
@@ -9,31 +9,18 @@ import { User } from './models/user.model';
 export class AppComponent {
 
 
-  nomeUser: String = "";
-  cognomeUser: String = "";
-  etaUser: Number = 0;
+  // nomeUser: String = "";
+  // cognomeUser: String = "";
+  // etaUser: Number = 0;
 
   utente: User;
 
-  @Output() onInviaUser = new EventEmitter<User>();
-
   //Questo metodo è legato all'evento (click)
-  onAggiungiUser(){
-    console.log("Sto inserendo un nuovo utente...");
-    // console.log("Nome: " + this.nomeUser);
-    // console.log("Cognome: " + this.cognomeUser);
-    // console.log("Età: " + this.etaUser);
+  onAggiungiUser(user: User){
 
-    // let utente: User = new User(this.nomeUser, this.cognomeUser, this.etaUser);
-
-    this.utente = new User(this.nomeUser, this.cognomeUser, this.etaUser);
-
-
-    console.log(this.utente);
-
-    this.onInviaUser.emit(this.utente)
+    this.utente = user;
+    console.log(user);
   }
 
-  //Passare il nuovo utente al component lista-user
-  //Trasformare la lista degli user una lista di componentUser
+
 }
