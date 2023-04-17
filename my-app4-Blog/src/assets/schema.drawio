@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="-JVGgnNMzfIMVcYhtigh" name="Page-1">
-        <mxGraphModel dx="1039" dy="474" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="828" dy="474" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="159" y="43" width="477" height="418" as="geometry"/>
+                    <mxGeometry x="155" y="51" width="477" height="481" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="208" y="77.5" width="316" height="25" as="geometry"/>
@@ -22,17 +22,83 @@
                 <mxCell id="7" value="Invia" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="211" y="159" width="67" height="25" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Titolo&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;link alla pagina&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="208" y="213" width="394" height="112" as="geometry"/>
+                <mxCell id="8" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Titolo&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;link alla pagina&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=default;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="208" y="245" width="394" height="112" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="PolliceSU" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="211" y="295" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="211" y="327" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="PolliceGiu" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="276" y="295" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="271" y="327" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Voti (Verde quando pos, Rosso quando neg:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="433" y="295" width="152" height="30" as="geometry"/>
+                <mxCell id="13" value="Voti (Verde quando pos, Rosso quando neg):&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="433" y="321" width="152" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Mostrare un avviso di avvenuto inserimento e un avviso di mancato inserimento nel caso in cui uno dei campi risulti vuoto" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="202" y="189" width="394" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="189" y="652"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="17">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="192" y="722"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="APP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="166" y="555" width="92" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="FormInserimento" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="237" y="625" width="107" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="17" target="18">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="266" y="797"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="ListaArticoli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="237" y="695" width="107" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Articolo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="329" y="772" width="107" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Titolo&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;link alla pagina&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=default;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="206" y="381" width="394" height="112" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="PolliceSU" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="209" y="463" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="PolliceGiu" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="269" y="463" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Voti (Verde quando pos, Rosso quando neg):&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="431" y="457" width="152" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="@Articolo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="344" y="378" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="@Articolo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="348" y="245" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="176" y="68" width="428" height="168" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="@FormInserimento" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="198" y="210" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="172" y="240" width="438" height="274" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="@ListaArticoli&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="196" y="493" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
