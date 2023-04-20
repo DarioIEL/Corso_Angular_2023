@@ -9,16 +9,29 @@ import { Articolo } from '../lista-articoli/articolo/articolo.model';
 })
 export class FormInserimentoComponent {
 
-  titolo: string;
-  link: string;
+  titolo: string = "";
+  link: string = "";
   voto: number = 0;
+
+  formCompleto: boolean ;
 
   //articleCreated è l'alias di creatoreDiArticolo. Nel richiamare l'evento sul selettore di form inserimento dovrò usare l'alias
   @Output('articleCreated') creatoreDiArticolo = new EventEmitter<Articolo>();
 
   onInviaArticolo(){
-    let mioArticolo = new Articolo(this.titolo, this.link, this.voto);
-    this.creatoreDiArticolo.emit(mioArticolo);
+    if(this.titolo != "" && this.link != "" ){
+
+      this.formCompleto = true;
+      let mioArticolo = new Articolo(this.titolo, this.link, this.voto);
+      this.creatoreDiArticolo.emit(mioArticolo);
+
+      this.titolo = "";
+      this.link = "";
+
+    }else{
+      this.formCompleto= false;
+    }
+
   }
 
 }

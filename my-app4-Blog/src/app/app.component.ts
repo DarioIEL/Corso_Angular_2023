@@ -17,4 +17,11 @@ export class AppComponent {
   }
 
 
+  onGetUser(nuovoUser: {
+    username: string,
+    cognome: string
+  }){
+    console.log("Questo è l'utente nella appComponent", nuovoUser);
+  }
+
 }

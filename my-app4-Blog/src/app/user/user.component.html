@@ -1,0 +1,18 @@
+
+
+<div class="mb-3">
+  <label for="" class="form-label">Nome</label>
+
+  <!-- #Qualcosa è una localReference (vive solo nello HTML), cioè assegno un nome a delle cose -->
+  <input type="text" class="form-control" #nomeUser>
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Cognome</label>
+  <input type="text" class="form-control" #cognomeUser>
+</div>
+
+<button type="button" class="btn btn-primary"
+(click)="onInviaUser(nomeUser.value, cognomeUser.value)">
+Invia User
+</button>

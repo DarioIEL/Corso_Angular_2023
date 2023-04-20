@@ -8,6 +8,13 @@
   <input type="text"class="form-control" [(ngModel)]="link">
 </div>
 
+<p *ngIf="!formCompleto; else okAggiunta" >
+  Non hai compilato bene i campi
+</p>
+
+<ng-template #okAggiunta>
+  <p>Inserimento avvenuto con successo</p>
+</ng-template>
 
 <input class="btn btn-primary" type="button" value="Invia" (click)="onInviaArticolo()">
 

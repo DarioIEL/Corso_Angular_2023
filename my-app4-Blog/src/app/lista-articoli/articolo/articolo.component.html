@@ -3,6 +3,7 @@
     <h4 class="card-title">{{singoloArticolo.titolo}}</h4>
     <p class="card-text">{{singoloArticolo.link}}</p>
     <p [ngClass]='{ok: singoloArticolo.voto > 0, noOk: singoloArticolo.voto <= -1, superOk: singoloArticolo.voto > 15}'>
+
       Voto: {{singoloArticolo.voto}}
     </p>
 
