@@ -1,0 +1,85 @@
+<mxfile host="65bd71144e">
+    <diagram id="esvY-7aL9MHElvlat0lV" name="Page-1">
+        <mxGraphModel dx="2133" dy="522" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="164" y="265" width="515" height="701" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="App Film" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="352" y="277" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="197" y="334" width="101" height="128" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="316" y="336" width="96" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="429" y="338" width="93" height="126" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="549" y="337" width="86" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Username" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="204" y="551" width="120" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Password" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="203" y="591" width="120" height="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="203" y="626" width="48" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Titolo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="205" y="674" width="248" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Immagine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="203" y="709" width="248" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Descrizione" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="203" y="742" width="248" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Costo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="205" y="777" width="246" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Aggiungi" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="202" y="817" width="120" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Img" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="212" y="349" width="68" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Titolo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="208" y="400" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.98;entryY=0.434;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="21" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Di più" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="213" y="433" width="67" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-243" y="325" width="267" height="261" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Img" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-187" y="347" width="169" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Titolo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-209" y="453" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Descrizione" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-198" y="477" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Prezzo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-211" y="500" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Creato da &quot;username&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-216" y="554" width="128" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Logout" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="337" y="817" width="120" height="27" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
