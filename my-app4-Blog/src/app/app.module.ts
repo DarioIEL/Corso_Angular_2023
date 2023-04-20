@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormInserimentoComponent } from './form-inserimento/form-inserimento.component';
 import { ListaArticoliComponent } from './lista-articoli/lista-articoli.component';
 import { ArticoloComponent } from './lista-articoli/articolo/articolo.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -16,7 +17,8 @@ import { ArticoloComponent } from './lista-articoli/articolo/articolo.component'
     ArticoloComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

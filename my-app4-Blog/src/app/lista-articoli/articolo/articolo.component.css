@@ -1,0 +1,11 @@
+.ok{
+  background-color: lightgreen;
+}
+
+.noOk{
+  background-color: lightcoral;
+}
+
+.superOk{
+  background-color: gold;
+}

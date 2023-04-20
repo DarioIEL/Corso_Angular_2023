@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Articolo } from './articolo/articolo.model';
 
 @Component({
   selector: 'app-lista-articoli',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista-articoli.component.css']
 })
 export class ListaArticoliComponent {
+
+  @Input() listaArticoliCreati: Articolo[];
+
+
 
 }

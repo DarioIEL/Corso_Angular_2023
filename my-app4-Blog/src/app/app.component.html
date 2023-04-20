@@ -3,7 +3,7 @@
   <h1>Blog di Dario</h1>
   <div class="row">
     <div class="col-md-6">
-      <app-form-inserimento></app-form-inserimento>
+      <app-form-inserimento (articleCreated)="onRecuperaArticolo($event)" ></app-form-inserimento>
     </div>
   </div>
 </div>
@@ -11,7 +11,7 @@
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-12">
-      <app-lista-articoli></app-lista-articoli>
+      <app-lista-articoli [listaArticoliCreati]="listaArticoliCreati" ></app-lista-articoli>
     </div>
   </div>
 </div>

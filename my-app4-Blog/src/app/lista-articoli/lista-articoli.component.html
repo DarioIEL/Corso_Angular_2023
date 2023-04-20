@@ -1,1 +1,11 @@
-<p>lista-articoli works!</p>
+<!-- <ul>
+  <li *ngFor="let mioArticolo of listaArticoliCreati">
+    {{mioArticolo.titolo}} - {{mioArticolo.link}} - {{mioArticolo.voto}}
+  </li>
+</ul> -->
+
+
+  <div *ngFor="let singoloArticolo of listaArticoliCreati">
+    <!-- replico il component app-articolo sulla base del mio ngFor -->
+    <app-articolo [singoloArticolo]="singoloArticolo"></app-articolo>
+  </div>

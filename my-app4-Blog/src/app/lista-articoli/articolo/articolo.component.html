@@ -1,1 +1,21 @@
-<p>articolo works!</p>
+<div class="card mb-2">
+  <div class="card-body">
+    <h4 class="card-title">{{singoloArticolo.titolo}}</h4>
+    <p class="card-text">{{singoloArticolo.link}}</p>
+    <p [ngClass]='{ok: singoloArticolo.voto > 0, noOk: singoloArticolo.voto <= -1, superOk: singoloArticolo.voto > 15}'>
+      Voto: {{singoloArticolo.voto}}
+    </p>
+
+    <button class="btn btn-primary m-2" (click)="onVoteUp()" >
+      <i class="bi bi-hand-thumbs-up-fill"></i>
+    </button>
+
+    <button class="btn btn-primary m-2" (click)="onVoteDown()">
+      <i role="button"  class="bi bi-hand-thumbs-down-fill"></i>
+    </button>
+
+  </div>
+</div>
+
+
+

@@ -1,14 +1,14 @@
 <div class="mb-3">
   <label for="" class="form-label">Titolo</label>
-  <input type="text"class="form-control">
+  <input type="text"class="form-control" [(ngModel)]="titolo">
 </div>
 
 <div class="mb-3">
   <label for="" class="form-label">Link</label>
-  <input type="text"class="form-control">
+  <input type="text"class="form-control" [(ngModel)]="link">
 </div>
 
-<p><i class="bi bi-window"></i></p>
 
-<input class="btn btn-primary" type="button" value="Invia">
+<input class="btn btn-primary" type="button" value="Invia" (click)="onInviaArticolo()">
+
 

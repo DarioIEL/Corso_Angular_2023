@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Articolo } from './articolo.model';
 
 @Component({
   selector: 'app-articolo',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class ArticoloComponent {
 
+  @Input() singoloArticolo: Articolo;
+
+  onVoteUp(){
+    this.singoloArticolo.voteUp();
+  }
+
+  onVoteDown(){
+    this.singoloArticolo.voteDown();
+  }
 }
