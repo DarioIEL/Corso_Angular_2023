@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrimoServiceService } from '../primo-service.service';
+import { AltroService } from '../services/altro.service';
 import { User } from '../user.model';
 
 @Component({
@@ -11,7 +12,8 @@ export class ListaUtentiComponent implements OnInit {
 
   utenze: User[] = [];
 
-  constructor(private mioService: PrimoServiceService){
+  //Posso iniettare più service nello stesso component
+  constructor(private mioService: PrimoServiceService, private altroService: AltroService){
 
   }
 
@@ -21,5 +23,6 @@ export class ListaUtentiComponent implements OnInit {
     let su = this.mioService.getSuperUser();
     console.log(su);
 
+    this.altroService.altroScriveInConsole("Mario");
   }
 }
