@@ -1,0 +1,28 @@
+<mxfile host="65bd71144e">
+    <diagram id="7e9r6cQOCP1qpCKESZa8" name="Page-1">
+        <mxGraphModel dx="1039" dy="323" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Form" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="63" width="412" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="177" y="196" width="273" height="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Utente1 - Username - Tipo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="198" width="268" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Admin" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="197" y="245" width="48" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Basic" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="257" y="245" width="48" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Supervisor" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="321" y="245" width="84" height="22" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

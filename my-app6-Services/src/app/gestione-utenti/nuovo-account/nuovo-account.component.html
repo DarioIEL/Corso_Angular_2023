@@ -1,0 +1,24 @@
+<div class="mb-3">
+  <label for="" class="form-label">Nome:</label>
+  <input type="text" class="form-control" [(ngModel)]="nome">
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Username:</label>
+  <input type="text" class="form-control" [(ngModel)]="username">
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Tipo</label>
+  <select class="form-select form-select-lg" [(ngModel)]="tipo">
+    <option selected disabled>Select one</option>
+    <option value="Supervisor">Supervisor</option>
+    <option value="Admin">Admin</option>
+    <option value="Basic">Basic</option>
+  </select>
+</div>
+
+<div class="mb-3">
+  <button type="button" class="btn btn-primary"
+  (click)="onRegistraAccount()">Invia</button>
+</div>

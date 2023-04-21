@@ -1,0 +1,12 @@
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">{{account.username}}</h4>
+    <p class="card-text">{{account.nome}} - {{account.tipo}} </p>
+
+    <!-- voglio mettere 3 pulsanti per cambiare tipo a questo account -->
+    <button type="button" class="btn btn-primary" (click)="onModTipo('Admin')">Admin</button>
+    <button type="button" class="btn btn-primary" (click)="onModTipo('Basic')">Basic</button>
+    <button type="button" class="btn btn-primary" (click)="onModTipo('Supervisor')">Supervisor</button>
+  </div>
+</div>

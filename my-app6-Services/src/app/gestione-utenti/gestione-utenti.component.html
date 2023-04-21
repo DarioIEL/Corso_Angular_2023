@@ -1,0 +1,16 @@
+<!-- Form per inserimento utente (nome, username, tipo)
+Stampare una lista di account.
+Su ogni Account voglio poter modificare lo status -->
+
+<div class="row">
+  <div class="col-md-12">
+    <app-nuovo-account ></app-nuovo-account>
+  </div>
+
+  <div class="col-md-6" *ngFor="let account of listaAccount; let i = index">
+    <app-account
+    [account]="account"
+    [indice]="i"></app-account>
+  </div>
+
+</div>
