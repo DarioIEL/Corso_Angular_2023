@@ -17,7 +17,6 @@ export class AccountsService {
   }
 
   modificaTipo(tipo: "Supervisor" | "Basic" | "Admin", indice: number): void{
-
     this.listaAccounts[indice].tipo = tipo;
   }
 

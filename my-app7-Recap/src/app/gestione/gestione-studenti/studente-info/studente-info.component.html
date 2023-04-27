@@ -1,0 +1,34 @@
+
+<h3>Info singolo studente</h3>
+<p>Digita una matricola per conoscere il dettaglio dello/a studente/ssa</p>
+
+<input type="number" [(ngModel)]="matricola">
+<button type="button" (click)="onStampaInfo()"> Info </button>
+
+<br>
+
+<div *ngIf="singoloStudente">
+  {{singoloStudente.matricola}} - {{singoloStudente.nome}} {{singoloStudente.cognome}}
+  <ul>
+    <li *ngFor="let corso of singoloStudente.codCorsi">
+      {{corso}}
+    </li>
+  </ul>
+</div>
+
+
+<!-- Crea un component per una finta "Login" (username, status).
+
+Ho due liste di utenti.
+1. Active Users
+2. Inactive Users
+
+le quali vengono riempite in base al Login, quindi in base allo status.
+
+Crea un pulsante per stampare gli utenti Active e quelli Inactive
+
+Quando stampo gli utenti, ognuno avrà un pulsante per cambiare il suo stato e quindi passare nell'altra lista.
+
+Conta anche quante volte un utente è passato da uno status all'altro.
+
+-->
