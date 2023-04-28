@@ -1,12 +1,12 @@
-<h2>Docenti</h2>
+<h2>Studenti</h2>
 <div class="row">
   <div class="col-md-6">
     <div class="list-group">
 
-      <div *ngFor="let docente of docenti">
+      <div *ngFor="let studente of studenti">
         <a class="list-group-item"
-        [routerLink]="[ '/docenti' , docente.id, docente.nome, docente.materia]">
-          {{docente.nome}}
+        [routerLink]="['/studenti', studente.id]">
+          {{studente.nome}}
         </a>
       </div>
 

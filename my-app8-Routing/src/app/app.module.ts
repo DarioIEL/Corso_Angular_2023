@@ -8,6 +8,9 @@ import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { HomeComponent } from './home/home.component';
 import { DocentiComponent } from './docenti/docenti.component';
 import { DocenteComponent } from './docenti/docente/docente.component';
+import { StudentiComponent } from './studenti/studenti.component';
+import { StudenteComponent } from './studenti/studente/studente.component';
+import { EditStudenteComponent } from './studenti/edit-studente/edit-studente.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DocenteComponent } from './docenti/docente/docente.component';
     ChiSiamoComponent,
     HomeComponent,
     DocentiComponent,
-    DocenteComponent
+    DocenteComponent,
+    StudentiComponent,
+    StudenteComponent,
+    EditStudenteComponent
   ],
   imports: [
     BrowserModule,
