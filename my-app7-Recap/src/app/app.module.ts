@@ -7,6 +7,9 @@ import { GestioneStudentiComponent } from './gestione/gestione-studenti/gestione
 import { StudentiIscrittiComponent } from './gestione/gestione-studenti/studenti-iscritti/studenti-iscritti.component';
 import { StudenteInfoComponent } from './gestione/gestione-studenti/studente-info/studente-info.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { ActiveUsersComponent } from './login/active-users/active-users.component';
+import { InactiveUsersComponent } from './login/inactive-users/inactive-users.component';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { FormsModule } from '@angular/forms';
     GestioneStudentiComponent,
     StudentiIscrittiComponent,
     StudenteInfoComponent,
+    LoginComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
   ],
   imports: [
     BrowserModule,

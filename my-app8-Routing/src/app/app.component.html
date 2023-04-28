@@ -1,0 +1,18 @@
+<nav class="nav justify-content-center  ">
+  <!-- Al posto di utilizzare i semplici href, i quali si comportano classicamente andando a ricaricare la pagina, utilizzo routerLink -->
+  <a class="nav-link active" routerLink="/" aria-current="page">Home</a>
+  <a class="nav-link" routerLink="/contatti">Contatti</a>
+
+  <!-- <a class="nav-link" routerLink="/chi-siamo" >Chi Siamo</a> -->
+  <a class="nav-link" [routerLink]="['/chi-siamo']">Chi Siamo</a>
+  <a class="nav-link" [routerLink]="['/docenti']">Docenti</a>
+
+
+</nav>
+
+<div class="container">
+
+  <!-- Qui verranno renderizzati i vari component -->
+  <router-outlet></router-outlet>
+
+</div>
