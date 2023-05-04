@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-6">
+
+    <ul>
+      <li *ngFor="let contatto of listaContatti">
+        <a [routerLink]="['/contatti', contatto.id]">
+          {{contatto.nome}}
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="col-md-6">
+    <!-- Questo router-outlet serve per la sottorotta dichiarata nel children della rotta contatti -->
+    <router-outlet></router-outlet>
+  </div>
+
+
+
+
+</div>
