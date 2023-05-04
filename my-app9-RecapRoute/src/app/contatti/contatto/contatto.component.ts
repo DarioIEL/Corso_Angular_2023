@@ -44,7 +44,11 @@ export class ContattoComponent implements OnInit, OnChanges{
             this.contatto = this.serviceContatti.getContattoById(idContatto);
           }
         );
+    }
 
+    onDeleteCont(id: number){
+      this.serviceContatti.deleteContatto(id);
+      this.router.navigate(['../'], {relativeTo: this.route});
     }
 
 }
