@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { ContattiService } from '../contatti.service';
 import { Contatto } from 'src/app/models/contatto.model';
@@ -8,7 +8,7 @@ import { Contatto } from 'src/app/models/contatto.model';
   templateUrl: './contatto.component.html',
   styleUrls: ['./contatto.component.scss']
 })
-export class ContattoComponent implements OnInit{
+export class ContattoComponent implements OnInit, OnChanges{
 
   contatto: Contatto;
 
@@ -19,6 +19,12 @@ export class ContattoComponent implements OnInit{
     private router: Router,
     private serviceContatti: ContattiService){ }
 
+    ngOnChanges(): void {
+      if(this.contatto){
+        console.log("Sta cambiando qualccosa nel contatto");
+
+      }
+    }
 
 
     //per leggere l'id preso dalla rotta sfrutto ngOnInit
@@ -38,9 +44,6 @@ export class ContattoComponent implements OnInit{
             this.contatto = this.serviceContatti.getContattoById(idContatto);
           }
         );
-
-
-
 
     }
 

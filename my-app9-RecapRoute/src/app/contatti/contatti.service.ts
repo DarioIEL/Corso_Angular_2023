@@ -25,11 +25,20 @@ export class ContattiService {
 
   getContattoById(id: number){
     const contatto = this.listaContatti.find(
-      (cont) =>{
+     (cont) => {
         return cont.id === id
       }
     )
     return contatto;
+
+    // let contatto = {};
+    // for(var i = 0; i < this.listaContatti.length; i++){
+    //   if(this.listaContatti[i].id === id){
+    //     contatto = this.listaContatti[i];
+    //     return contatto;
+    //   }
+    // }
+
   }
 
   constructor() { }
