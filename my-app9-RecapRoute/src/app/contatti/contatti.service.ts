@@ -42,7 +42,7 @@ export class ContattiService {
   }
 
   deleteContatto(id: number){
-    this.listaContatti.splice(id, 1);
+
   }
 
   constructor() { }

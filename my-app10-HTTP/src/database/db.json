@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Dario",
+      "ruolo": "Basic",
+      "password": true
+    },
+    {
+      "id": 2,
+      "nome": "Pippo",
+      "ruolo": "Admin",
+      "password": true
+    },
+    {
+      "id": 3,
+      "nome": "Maria",
+      "ruolo": "host",
+      "password": false
+    }
+  ],
+  "commenti": [
+    {
+      "id": 1,
+      "bodyTxt": "Ciao, come stai ?"
+    },
+    {
+      "id": 2,
+      "bodyTxt": "Programma interessante"
+    },
+    {
+      "bodyTxt": "Terzo Commento inserito",
+      "id": 3
+    },
+    {
+      "bodyTxt": "Terzo Commento inserito",
+      "id": 4
+    },
+    {
+      "bodyTxt": "Terzo Commento inserito",
+      "id": 5
+    }
+  ]
+}

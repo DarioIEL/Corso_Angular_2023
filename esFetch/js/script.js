@@ -13,6 +13,8 @@ fetch(URL)
     
     persone.forEach(persona => {
         demo.innerHTML += persona.first_name + "<br>";
+      
+        
     });
 });
 
