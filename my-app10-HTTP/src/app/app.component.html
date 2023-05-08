@@ -1,1 +1,15 @@
 <button class="btn btn-primary" (click)="onAggiungiCommento()"> Add Commento</button>
+
+<button (click)="onAggiungiUtente()">Add User</button>
+
+
+<ul>
+  <li *ngFor="let utente of listaUtenti">
+    {{utente.nome}}
+
+    <button (click)="onRemoveUser(utente.id)" >Elimina</button>
+  </li>
+</ul>
+
+
+<!-- Creare rotta Autori, inserire un form per l'inserimento dell'autore, prevedere la cancellazione by Id del singolo autore. Crea dei pulsanti "Materia", i quali al click restituiscono solo gli autori di quella materia -->

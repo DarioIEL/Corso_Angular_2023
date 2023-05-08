@@ -7,12 +7,6 @@
       "password": true
     },
     {
-      "id": 2,
-      "nome": "Pippo",
-      "ruolo": "Admin",
-      "password": true
-    },
-    {
       "id": 3,
       "nome": "Maria",
       "ruolo": "host",
@@ -39,6 +33,24 @@
     {
       "bodyTxt": "Terzo Commento inserito",
       "id": 5
+    }
+  ],
+
+  "autori": [
+    {
+      "id":1,
+      "nome":"Adrian",
+      "materia": "Angular"
+    },
+    {
+      "id": 2,
+      "nome": "Giada",
+      "materia": "Java"
+    },
+    {
+      "id":3,
+      "nome": "Pablo",
+      "materia": "Angular"
     }
   ]
 }

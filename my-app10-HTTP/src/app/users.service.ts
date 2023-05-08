@@ -32,8 +32,22 @@ export class UsersService {
       )
   }
 
+  postUser(nome: string, ruolo: string, password: boolean, id?: number){
+
+    let utente: User = new User(nome, ruolo, password);
+
+    //se faccio il subscribe all'interno del mio service non ho l'obbligo del return ----> return this.http.post(...)
+    this.http.post(
+      this.url,
+      utente
+    ).subscribe(()=>{
+      console.log("Utente Aggiunto");
+    })
+  }
 
 
-
-
+  deleteById(id: number){
+  //se il subscribe lo eseguo nel component che utilizza il metodo sono obbligato ad utilizzare il return
+   return this.http.delete(this.url + "/" + id);
+  }
 }

@@ -1,14 +1,14 @@
 export class User{
-  id: number;
   nome: string;
   ruolo: string;
   password: boolean;
+  id?: number;
 
-  constructor(id: number, nome: string, ruolo: string, password: boolean){
-    this.id = id;
+  constructor(nome: string, ruolo: string, password: boolean, id?: number){
     this.nome = nome;
     this.ruolo = ruolo;
     this.password = password;
+    this.id = id;
   }
 
 

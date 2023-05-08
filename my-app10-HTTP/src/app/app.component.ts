@@ -17,19 +17,32 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.userService.getUsers()
-    .subscribe(utenti => {
-      this.listaUtenti = utenti;
-    });
-
-    //in questo caso il subscribe è già stato eseguito nel service quindi non devo più rifarlo
+    this.userService.getUsers().subscribe(
+      utenti => {
+        this.listaUtenti = utenti;
+      }
+    )
+        //in questo caso il subscribe è già stato eseguito nel service quindi non devo più rifarlo
     this.commService.getCommenti();
 
     // this.commService.postCommento();
   }
 
-
   onAggiungiCommento(){
     this.commService.postCommento();
+  }
+
+  onAggiungiUtente(){
+    this.userService.postUser( "Anna", "Admin", true);
+    this.ngOnInit();
+  }
+
+  onRemoveUser(id: number){
+    this.userService.deleteById(id)
+    .subscribe(()=>{
+      console.log("utente eliminato");
+      this.ngOnInit();
+    }
+    );
   }
 }
